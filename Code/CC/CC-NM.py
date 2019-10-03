@@ -627,13 +627,19 @@ from timeit import default_timer as timer
 
 progstart=timer()
 
-Nmax=1
+###################
+# NMAX
+###################
+Nmax=3
+
+
+
 kmax=1.0
 mbase = MomSpaceBasis(Nmax,kmax)
 lattice=mbase.nvec()
 
 ## set particle number
-NN= 13
+NN= 14
 st_degen=2  # spin up and down
 print("chosen N =", NN)
 print("magic numbers", magic_numbers(mbase))
